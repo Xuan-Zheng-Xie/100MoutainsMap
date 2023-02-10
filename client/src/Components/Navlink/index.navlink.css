@@ -1,0 +1,17 @@
+:root{
+    --mainColor: #29335C;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+.link{
+    display: inline-block;
+    margin: 0 2rem 1.2rem 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--secondaryColor);
+}

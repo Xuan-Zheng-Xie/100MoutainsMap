@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import CustomNavLink from '../Navlink';
 import './index.navbar.css'
 
 export default class Navbar extends Component{
@@ -8,17 +9,17 @@ export default class Navbar extends Component{
     showNavBar = ()=>{
         this.navRef.current.classList.toggle('responsive_nav')
     }
-
-
     render(){
         return (
             <header>
-                <h3>Logo</h3>
+                <span className='logo'>
+                    台灣山岳
+                </span>
                 <nav ref={this.navRef}>
-                    <a href="/#">Home</a>
-                    <a href="/#">Map</a>
-                    <a href="/#">Records</a>
-                    <a href="/#">About</a>
+                    <CustomNavLink to='/'>百岳地圖</CustomNavLink>
+                    <CustomNavLink to='/gallery'>相簿</CustomNavLink>
+                    <CustomNavLink to='/about'>關於</CustomNavLink>
+                    
                     <button className='nav-btn nav-close-btn' onClick={this.showNavBar}>
                         <FaTimes/>
                     </button>

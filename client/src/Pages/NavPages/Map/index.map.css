@@ -1,0 +1,25 @@
+.wrap-component-taiwain-map{
+    width: 100vw;
+    height: 100vh;
+}
+.wrap-mountain-content{
+    display: flex;
+    flex-direction: column;
+}
+.btn-mountain-content{
+    background-color: transparent;
+    border-style: none;
+    font-size: 1rem;
+    font-family: serif; 
+    font-weight: 400;
+    height: 48px;
+    color: #000;
+    cursor: pointer;
+}
+
+.hide{
+    display: none !important;
+}
+.view{
+    display: flex;
+}

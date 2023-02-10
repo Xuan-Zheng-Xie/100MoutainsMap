@@ -1,0 +1,4 @@
+.wrap-app-content{
+    display: flex;
+    flex-direction: row;
+}

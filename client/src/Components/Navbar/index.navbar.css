@@ -1,24 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;1,300&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
 
 :root{
-    --mainColor: #29335C;
+    --mainColor: #dddde0;
     --mainColorLight: #5767aa;
     --secondaryColor: #DB2B39;
-    --textColor: #eee;
+    --textColor: #000;
 }
 
 header{
     display: flex;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
     height: 70px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
+    background-color: transparent;
     color: var(--textColor);
+    position: absolute;
+    z-index: 3;
 }
 
-header h3{
+header .logo{
     padding-bottom: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: cwTeXKai;
 }
 
 nav a{
@@ -26,6 +35,8 @@ nav a{
     margin: 0 2rem 1.2rem 2rem;
     color: var(--textColor);
     text-decoration: none;
+    font-family: cwTeXYen, sans-serif;
+    font-size: 1.3rem;
 }
 
 nav a:hover{
@@ -54,8 +65,8 @@ header .nav-btn{
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
+        height: 35vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,6 +79,13 @@ header .nav-btn{
 
     header .responsive_nav{
         transform: none;
+        z-index: 5;
+    }
+
+    header .logo{
+        font-size: 1.5rem;
+        font-weight: 900;
+        font-family: cwTeXKai, cwTeXFangSong, serif;
     }
 
     nav .nav-close-btn{
